@@ -13,12 +13,10 @@ public class Zentrale {
 		this.C=c;
 	}
 	
-	public String addID(String id) {
-		for (String ID : IDList) {
-			if(id == ID){
+	public String addID(String id) {		
+			if(IDList.contains(id)) {
 				return "ID already added";
 			}
-		}
 		try {
 			Integer.parseInt(id);
 			IDList.add(id);
