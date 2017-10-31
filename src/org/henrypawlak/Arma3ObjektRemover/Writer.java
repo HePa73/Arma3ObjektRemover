@@ -24,10 +24,10 @@ public class Writer {
 				}
 				writer.close();
 				fwriter.close();
-				return "Erfolgreich abgeschlossen";
+				return "Successfull";
 			}catch(IOException e) {
 				e.printStackTrace();
-				return "Fehler beim Schreiben der Datei";
+				return "Error while writing the file";
 			}			
 		
 			

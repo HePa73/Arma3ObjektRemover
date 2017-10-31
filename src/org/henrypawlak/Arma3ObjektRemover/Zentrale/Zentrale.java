@@ -16,15 +16,15 @@ public class Zentrale {
 	public String addID(String id) {
 		for (String ID : IDList) {
 			if(id == ID){
-				return "ID  bereits vorhanden";
+				return "ID already added";
 			}
 		}
 		try {
 			Integer.parseInt(id);
 			IDList.add(id);
-			return "Id erfolgreich hinzugefügt";
+			return "ID successfully added";
 		}catch(NumberFormatException e) {
-			return "Keine Zahl";
+			return "Not a Number";
 		}
 	}
 	public String finish() {
